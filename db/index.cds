@@ -5,4 +5,17 @@
 // repository can be referenced from another repository
 // ---------------------------------------------------------------------------------------------------------------------
 
-using teched.flight.trip from 'spaceflight-model/db';
+namespace teched.flight.customers;
+
+using teched.flight.trip as flight from 'spaceflight-model/db';
+
+entity Customers   {
+      key ID    : String(10);    // e.g. "20180726/GA1B6"
+      CustomerName : String(50);
+      EmailAddress : String(50);
+      PassportNumber : Integer;
+};
+
+extend flight.Bookings {
+    Customer  : Association to Customers;
+};
