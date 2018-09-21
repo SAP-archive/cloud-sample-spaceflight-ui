@@ -1,0 +1,961 @@
+[{
+	"ID": "Itinerary_ID 1",
+	"Name": "Name 1",
+	"EarthLegs_leg1_ID": "EarthLegs_leg1_ID 1",
+	"EarthLegs_leg2_ID": "EarthLegs_leg2_ID 1",
+	"EarthLegs_leg3_ID": "EarthLegs_leg3_ID 1",
+	"EarthLegs_leg4_ID": "EarthLegs_leg4_ID 1",
+	"EarthLegs_leg5_ID": "EarthLegs_leg5_ID 1",
+	"SpaceLegs_leg1_ID": 6043,
+	"SpaceLegs_leg2_ID": 4782,
+	"SpaceLegs_leg3_ID": 5449,
+	"SpaceLegs_leg4_ID": 7566,
+	"SpaceLegs_leg5_ID": 8708,
+	"SpaceLegs_leg6_ID": 2500,
+	"SpaceLegs_leg7_ID": 7329,
+	"SpaceLegs_leg8_ID": 5370,
+	"SpaceLegs_leg9_ID": 4086,
+	"__metadata": {
+		"uri": "Itineraries('Itinerary_ID%201')",
+		"type": "BookingService.Itineraries"
+	},
+	"Bookings": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/Bookings"
+		}
+	},
+	"EarthLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/EarthLegs_leg1"
+		}
+	},
+	"EarthLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/EarthLegs_leg2"
+		}
+	},
+	"EarthLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/EarthLegs_leg3"
+		}
+	},
+	"EarthLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/EarthLegs_leg4"
+		}
+	},
+	"EarthLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/EarthLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/SpaceLegs_leg1"
+		}
+	},
+	"SpaceLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/SpaceLegs_leg2"
+		}
+	},
+	"SpaceLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/SpaceLegs_leg3"
+		}
+	},
+	"SpaceLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/SpaceLegs_leg4"
+		}
+	},
+	"SpaceLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/SpaceLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg6": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/SpaceLegs_leg6"
+		}
+	},
+	"SpaceLegs_leg7": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/SpaceLegs_leg7"
+		}
+	},
+	"SpaceLegs_leg8": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/SpaceLegs_leg8"
+		}
+	},
+	"SpaceLegs_leg9": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%201')/SpaceLegs_leg9"
+		}
+	}
+}, {
+	"ID": "Itinerary_ID 2",
+	"Name": "Name 2",
+	"EarthLegs_leg1_ID": "EarthLegs_leg1_ID 2",
+	"EarthLegs_leg2_ID": "EarthLegs_leg2_ID 2",
+	"EarthLegs_leg3_ID": "EarthLegs_leg3_ID 2",
+	"EarthLegs_leg4_ID": "EarthLegs_leg4_ID 2",
+	"EarthLegs_leg5_ID": "EarthLegs_leg5_ID 2",
+	"SpaceLegs_leg1_ID": 7640,
+	"SpaceLegs_leg2_ID": 3914,
+	"SpaceLegs_leg3_ID": 3359,
+	"SpaceLegs_leg4_ID": 4605,
+	"SpaceLegs_leg5_ID": 3684,
+	"SpaceLegs_leg6_ID": 1902,
+	"SpaceLegs_leg7_ID": 161,
+	"SpaceLegs_leg8_ID": 8419,
+	"SpaceLegs_leg9_ID": 8175,
+	"__metadata": {
+		"uri": "Itineraries('Itinerary_ID%202')",
+		"type": "BookingService.Itineraries"
+	},
+	"Bookings": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/Bookings"
+		}
+	},
+	"EarthLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/EarthLegs_leg1"
+		}
+	},
+	"EarthLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/EarthLegs_leg2"
+		}
+	},
+	"EarthLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/EarthLegs_leg3"
+		}
+	},
+	"EarthLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/EarthLegs_leg4"
+		}
+	},
+	"EarthLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/EarthLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/SpaceLegs_leg1"
+		}
+	},
+	"SpaceLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/SpaceLegs_leg2"
+		}
+	},
+	"SpaceLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/SpaceLegs_leg3"
+		}
+	},
+	"SpaceLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/SpaceLegs_leg4"
+		}
+	},
+	"SpaceLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/SpaceLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg6": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/SpaceLegs_leg6"
+		}
+	},
+	"SpaceLegs_leg7": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/SpaceLegs_leg7"
+		}
+	},
+	"SpaceLegs_leg8": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/SpaceLegs_leg8"
+		}
+	},
+	"SpaceLegs_leg9": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%202')/SpaceLegs_leg9"
+		}
+	}
+}, {
+	"ID": "Itinerary_ID 3",
+	"Name": "Name 3",
+	"EarthLegs_leg1_ID": "EarthLegs_leg1_ID 3",
+	"EarthLegs_leg2_ID": "EarthLegs_leg2_ID 3",
+	"EarthLegs_leg3_ID": "EarthLegs_leg3_ID 3",
+	"EarthLegs_leg4_ID": "EarthLegs_leg4_ID 3",
+	"EarthLegs_leg5_ID": "EarthLegs_leg5_ID 3",
+	"SpaceLegs_leg1_ID": 1149,
+	"SpaceLegs_leg2_ID": 4983,
+	"SpaceLegs_leg3_ID": 8022,
+	"SpaceLegs_leg4_ID": 2652,
+	"SpaceLegs_leg5_ID": 3710,
+	"SpaceLegs_leg6_ID": 7931,
+	"SpaceLegs_leg7_ID": 2456,
+	"SpaceLegs_leg8_ID": 1323,
+	"SpaceLegs_leg9_ID": 3112,
+	"__metadata": {
+		"uri": "Itineraries('Itinerary_ID%203')",
+		"type": "BookingService.Itineraries"
+	},
+	"Bookings": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/Bookings"
+		}
+	},
+	"EarthLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/EarthLegs_leg1"
+		}
+	},
+	"EarthLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/EarthLegs_leg2"
+		}
+	},
+	"EarthLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/EarthLegs_leg3"
+		}
+	},
+	"EarthLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/EarthLegs_leg4"
+		}
+	},
+	"EarthLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/EarthLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/SpaceLegs_leg1"
+		}
+	},
+	"SpaceLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/SpaceLegs_leg2"
+		}
+	},
+	"SpaceLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/SpaceLegs_leg3"
+		}
+	},
+	"SpaceLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/SpaceLegs_leg4"
+		}
+	},
+	"SpaceLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/SpaceLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg6": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/SpaceLegs_leg6"
+		}
+	},
+	"SpaceLegs_leg7": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/SpaceLegs_leg7"
+		}
+	},
+	"SpaceLegs_leg8": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/SpaceLegs_leg8"
+		}
+	},
+	"SpaceLegs_leg9": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%203')/SpaceLegs_leg9"
+		}
+	}
+}, {
+	"ID": "Itinerary_ID 4",
+	"Name": "Name 4",
+	"EarthLegs_leg1_ID": "EarthLegs_leg1_ID 4",
+	"EarthLegs_leg2_ID": "EarthLegs_leg2_ID 4",
+	"EarthLegs_leg3_ID": "EarthLegs_leg3_ID 4",
+	"EarthLegs_leg4_ID": "EarthLegs_leg4_ID 4",
+	"EarthLegs_leg5_ID": "EarthLegs_leg5_ID 4",
+	"SpaceLegs_leg1_ID": 5752,
+	"SpaceLegs_leg2_ID": 125,
+	"SpaceLegs_leg3_ID": 4371,
+	"SpaceLegs_leg4_ID": 4674,
+	"SpaceLegs_leg5_ID": 5518,
+	"SpaceLegs_leg6_ID": 8766,
+	"SpaceLegs_leg7_ID": 6115,
+	"SpaceLegs_leg8_ID": 7083,
+	"SpaceLegs_leg9_ID": 4670,
+	"__metadata": {
+		"uri": "Itineraries('Itinerary_ID%204')",
+		"type": "BookingService.Itineraries"
+	},
+	"Bookings": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/Bookings"
+		}
+	},
+	"EarthLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/EarthLegs_leg1"
+		}
+	},
+	"EarthLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/EarthLegs_leg2"
+		}
+	},
+	"EarthLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/EarthLegs_leg3"
+		}
+	},
+	"EarthLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/EarthLegs_leg4"
+		}
+	},
+	"EarthLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/EarthLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/SpaceLegs_leg1"
+		}
+	},
+	"SpaceLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/SpaceLegs_leg2"
+		}
+	},
+	"SpaceLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/SpaceLegs_leg3"
+		}
+	},
+	"SpaceLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/SpaceLegs_leg4"
+		}
+	},
+	"SpaceLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/SpaceLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg6": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/SpaceLegs_leg6"
+		}
+	},
+	"SpaceLegs_leg7": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/SpaceLegs_leg7"
+		}
+	},
+	"SpaceLegs_leg8": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/SpaceLegs_leg8"
+		}
+	},
+	"SpaceLegs_leg9": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%204')/SpaceLegs_leg9"
+		}
+	}
+}, {
+	"ID": "Itinerary_ID 5",
+	"Name": "Name 5",
+	"EarthLegs_leg1_ID": "EarthLegs_leg1_ID 5",
+	"EarthLegs_leg2_ID": "EarthLegs_leg2_ID 5",
+	"EarthLegs_leg3_ID": "EarthLegs_leg3_ID 5",
+	"EarthLegs_leg4_ID": "EarthLegs_leg4_ID 5",
+	"EarthLegs_leg5_ID": "EarthLegs_leg5_ID 5",
+	"SpaceLegs_leg1_ID": 6907,
+	"SpaceLegs_leg2_ID": 9079,
+	"SpaceLegs_leg3_ID": 3112,
+	"SpaceLegs_leg4_ID": 3031,
+	"SpaceLegs_leg5_ID": 9250,
+	"SpaceLegs_leg6_ID": 3227,
+	"SpaceLegs_leg7_ID": 1860,
+	"SpaceLegs_leg8_ID": 1733,
+	"SpaceLegs_leg9_ID": 9511,
+	"__metadata": {
+		"uri": "Itineraries('Itinerary_ID%205')",
+		"type": "BookingService.Itineraries"
+	},
+	"Bookings": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/Bookings"
+		}
+	},
+	"EarthLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/EarthLegs_leg1"
+		}
+	},
+	"EarthLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/EarthLegs_leg2"
+		}
+	},
+	"EarthLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/EarthLegs_leg3"
+		}
+	},
+	"EarthLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/EarthLegs_leg4"
+		}
+	},
+	"EarthLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/EarthLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/SpaceLegs_leg1"
+		}
+	},
+	"SpaceLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/SpaceLegs_leg2"
+		}
+	},
+	"SpaceLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/SpaceLegs_leg3"
+		}
+	},
+	"SpaceLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/SpaceLegs_leg4"
+		}
+	},
+	"SpaceLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/SpaceLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg6": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/SpaceLegs_leg6"
+		}
+	},
+	"SpaceLegs_leg7": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/SpaceLegs_leg7"
+		}
+	},
+	"SpaceLegs_leg8": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/SpaceLegs_leg8"
+		}
+	},
+	"SpaceLegs_leg9": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%205')/SpaceLegs_leg9"
+		}
+	}
+}, {
+	"ID": "Itinerary_ID 6",
+	"Name": "Name 6",
+	"EarthLegs_leg1_ID": "EarthLegs_leg1_ID 6",
+	"EarthLegs_leg2_ID": "EarthLegs_leg2_ID 6",
+	"EarthLegs_leg3_ID": "EarthLegs_leg3_ID 6",
+	"EarthLegs_leg4_ID": "EarthLegs_leg4_ID 6",
+	"EarthLegs_leg5_ID": "EarthLegs_leg5_ID 6",
+	"SpaceLegs_leg1_ID": 669,
+	"SpaceLegs_leg2_ID": 6845,
+	"SpaceLegs_leg3_ID": 9792,
+	"SpaceLegs_leg4_ID": 5096,
+	"SpaceLegs_leg5_ID": 9497,
+	"SpaceLegs_leg6_ID": 1346,
+	"SpaceLegs_leg7_ID": 417,
+	"SpaceLegs_leg8_ID": 6235,
+	"SpaceLegs_leg9_ID": 7773,
+	"__metadata": {
+		"uri": "Itineraries('Itinerary_ID%206')",
+		"type": "BookingService.Itineraries"
+	},
+	"Bookings": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/Bookings"
+		}
+	},
+	"EarthLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/EarthLegs_leg1"
+		}
+	},
+	"EarthLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/EarthLegs_leg2"
+		}
+	},
+	"EarthLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/EarthLegs_leg3"
+		}
+	},
+	"EarthLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/EarthLegs_leg4"
+		}
+	},
+	"EarthLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/EarthLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/SpaceLegs_leg1"
+		}
+	},
+	"SpaceLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/SpaceLegs_leg2"
+		}
+	},
+	"SpaceLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/SpaceLegs_leg3"
+		}
+	},
+	"SpaceLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/SpaceLegs_leg4"
+		}
+	},
+	"SpaceLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/SpaceLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg6": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/SpaceLegs_leg6"
+		}
+	},
+	"SpaceLegs_leg7": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/SpaceLegs_leg7"
+		}
+	},
+	"SpaceLegs_leg8": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/SpaceLegs_leg8"
+		}
+	},
+	"SpaceLegs_leg9": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%206')/SpaceLegs_leg9"
+		}
+	}
+}, {
+	"ID": "Itinerary_ID 7",
+	"Name": "Name 7",
+	"EarthLegs_leg1_ID": "EarthLegs_leg1_ID 7",
+	"EarthLegs_leg2_ID": "EarthLegs_leg2_ID 7",
+	"EarthLegs_leg3_ID": "EarthLegs_leg3_ID 7",
+	"EarthLegs_leg4_ID": "EarthLegs_leg4_ID 7",
+	"EarthLegs_leg5_ID": "EarthLegs_leg5_ID 7",
+	"SpaceLegs_leg1_ID": 9393,
+	"SpaceLegs_leg2_ID": 569,
+	"SpaceLegs_leg3_ID": 7560,
+	"SpaceLegs_leg4_ID": 1345,
+	"SpaceLegs_leg5_ID": 3878,
+	"SpaceLegs_leg6_ID": 9902,
+	"SpaceLegs_leg7_ID": 6417,
+	"SpaceLegs_leg8_ID": 1882,
+	"SpaceLegs_leg9_ID": 630,
+	"__metadata": {
+		"uri": "Itineraries('Itinerary_ID%207')",
+		"type": "BookingService.Itineraries"
+	},
+	"Bookings": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/Bookings"
+		}
+	},
+	"EarthLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/EarthLegs_leg1"
+		}
+	},
+	"EarthLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/EarthLegs_leg2"
+		}
+	},
+	"EarthLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/EarthLegs_leg3"
+		}
+	},
+	"EarthLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/EarthLegs_leg4"
+		}
+	},
+	"EarthLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/EarthLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/SpaceLegs_leg1"
+		}
+	},
+	"SpaceLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/SpaceLegs_leg2"
+		}
+	},
+	"SpaceLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/SpaceLegs_leg3"
+		}
+	},
+	"SpaceLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/SpaceLegs_leg4"
+		}
+	},
+	"SpaceLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/SpaceLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg6": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/SpaceLegs_leg6"
+		}
+	},
+	"SpaceLegs_leg7": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/SpaceLegs_leg7"
+		}
+	},
+	"SpaceLegs_leg8": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/SpaceLegs_leg8"
+		}
+	},
+	"SpaceLegs_leg9": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%207')/SpaceLegs_leg9"
+		}
+	}
+}, {
+	"ID": "Itinerary_ID 8",
+	"Name": "Name 8",
+	"EarthLegs_leg1_ID": "EarthLegs_leg1_ID 8",
+	"EarthLegs_leg2_ID": "EarthLegs_leg2_ID 8",
+	"EarthLegs_leg3_ID": "EarthLegs_leg3_ID 8",
+	"EarthLegs_leg4_ID": "EarthLegs_leg4_ID 8",
+	"EarthLegs_leg5_ID": "EarthLegs_leg5_ID 8",
+	"SpaceLegs_leg1_ID": 7729,
+	"SpaceLegs_leg2_ID": 7802,
+	"SpaceLegs_leg3_ID": 9982,
+	"SpaceLegs_leg4_ID": 3648,
+	"SpaceLegs_leg5_ID": 7402,
+	"SpaceLegs_leg6_ID": 607,
+	"SpaceLegs_leg7_ID": 4556,
+	"SpaceLegs_leg8_ID": 5647,
+	"SpaceLegs_leg9_ID": 5848,
+	"__metadata": {
+		"uri": "Itineraries('Itinerary_ID%208')",
+		"type": "BookingService.Itineraries"
+	},
+	"Bookings": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/Bookings"
+		}
+	},
+	"EarthLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/EarthLegs_leg1"
+		}
+	},
+	"EarthLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/EarthLegs_leg2"
+		}
+	},
+	"EarthLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/EarthLegs_leg3"
+		}
+	},
+	"EarthLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/EarthLegs_leg4"
+		}
+	},
+	"EarthLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/EarthLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/SpaceLegs_leg1"
+		}
+	},
+	"SpaceLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/SpaceLegs_leg2"
+		}
+	},
+	"SpaceLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/SpaceLegs_leg3"
+		}
+	},
+	"SpaceLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/SpaceLegs_leg4"
+		}
+	},
+	"SpaceLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/SpaceLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg6": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/SpaceLegs_leg6"
+		}
+	},
+	"SpaceLegs_leg7": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/SpaceLegs_leg7"
+		}
+	},
+	"SpaceLegs_leg8": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/SpaceLegs_leg8"
+		}
+	},
+	"SpaceLegs_leg9": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%208')/SpaceLegs_leg9"
+		}
+	}
+}, {
+	"ID": "Itinerary_ID 9",
+	"Name": "Name 9",
+	"EarthLegs_leg1_ID": "EarthLegs_leg1_ID 9",
+	"EarthLegs_leg2_ID": "EarthLegs_leg2_ID 9",
+	"EarthLegs_leg3_ID": "EarthLegs_leg3_ID 9",
+	"EarthLegs_leg4_ID": "EarthLegs_leg4_ID 9",
+	"EarthLegs_leg5_ID": "EarthLegs_leg5_ID 9",
+	"SpaceLegs_leg1_ID": 4489,
+	"SpaceLegs_leg2_ID": 9979,
+	"SpaceLegs_leg3_ID": 232,
+	"SpaceLegs_leg4_ID": 894,
+	"SpaceLegs_leg5_ID": 175,
+	"SpaceLegs_leg6_ID": 7278,
+	"SpaceLegs_leg7_ID": 2646,
+	"SpaceLegs_leg8_ID": 7045,
+	"SpaceLegs_leg9_ID": 8660,
+	"__metadata": {
+		"uri": "Itineraries('Itinerary_ID%209')",
+		"type": "BookingService.Itineraries"
+	},
+	"Bookings": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/Bookings"
+		}
+	},
+	"EarthLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/EarthLegs_leg1"
+		}
+	},
+	"EarthLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/EarthLegs_leg2"
+		}
+	},
+	"EarthLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/EarthLegs_leg3"
+		}
+	},
+	"EarthLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/EarthLegs_leg4"
+		}
+	},
+	"EarthLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/EarthLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/SpaceLegs_leg1"
+		}
+	},
+	"SpaceLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/SpaceLegs_leg2"
+		}
+	},
+	"SpaceLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/SpaceLegs_leg3"
+		}
+	},
+	"SpaceLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/SpaceLegs_leg4"
+		}
+	},
+	"SpaceLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/SpaceLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg6": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/SpaceLegs_leg6"
+		}
+	},
+	"SpaceLegs_leg7": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/SpaceLegs_leg7"
+		}
+	},
+	"SpaceLegs_leg8": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/SpaceLegs_leg8"
+		}
+	},
+	"SpaceLegs_leg9": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%209')/SpaceLegs_leg9"
+		}
+	}
+}, {
+	"ID": "Itinerary_ID 10",
+	"Name": "Name 10",
+	"EarthLegs_leg1_ID": "EarthLegs_leg1_ID 10",
+	"EarthLegs_leg2_ID": "EarthLegs_leg2_ID 10",
+	"EarthLegs_leg3_ID": "EarthLegs_leg3_ID 10",
+	"EarthLegs_leg4_ID": "EarthLegs_leg4_ID 10",
+	"EarthLegs_leg5_ID": "EarthLegs_leg5_ID 10",
+	"SpaceLegs_leg1_ID": 5852,
+	"SpaceLegs_leg2_ID": 3945,
+	"SpaceLegs_leg3_ID": 3831,
+	"SpaceLegs_leg4_ID": 7322,
+	"SpaceLegs_leg5_ID": 7729,
+	"SpaceLegs_leg6_ID": 6955,
+	"SpaceLegs_leg7_ID": 774,
+	"SpaceLegs_leg8_ID": 2700,
+	"SpaceLegs_leg9_ID": 9898,
+	"__metadata": {
+		"uri": "Itineraries('Itinerary_ID%2010')",
+		"type": "BookingService.Itineraries"
+	},
+	"Bookings": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/Bookings"
+		}
+	},
+	"EarthLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/EarthLegs_leg1"
+		}
+	},
+	"EarthLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/EarthLegs_leg2"
+		}
+	},
+	"EarthLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/EarthLegs_leg3"
+		}
+	},
+	"EarthLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/EarthLegs_leg4"
+		}
+	},
+	"EarthLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/EarthLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg1": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/SpaceLegs_leg1"
+		}
+	},
+	"SpaceLegs_leg2": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/SpaceLegs_leg2"
+		}
+	},
+	"SpaceLegs_leg3": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/SpaceLegs_leg3"
+		}
+	},
+	"SpaceLegs_leg4": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/SpaceLegs_leg4"
+		}
+	},
+	"SpaceLegs_leg5": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/SpaceLegs_leg5"
+		}
+	},
+	"SpaceLegs_leg6": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/SpaceLegs_leg6"
+		}
+	},
+	"SpaceLegs_leg7": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/SpaceLegs_leg7"
+		}
+	},
+	"SpaceLegs_leg8": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/SpaceLegs_leg8"
+		}
+	},
+	"SpaceLegs_leg9": {
+		"__deferred": {
+			"uri": "Itineraries('Itinerary_ID%2010')/SpaceLegs_leg9"
+		}
+	}
+}]

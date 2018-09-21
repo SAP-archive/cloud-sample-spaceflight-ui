@@ -1,0 +1,16 @@
+<mvc:View
+	controllerName="com.sap.teched.spacetravelagency.controller.NotFound"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+
+	<MessagePage
+		id="page"
+		title="{i18n>notFoundTitle}"
+		text="{i18n>notFoundText}"
+		icon="sap-icon://document"
+		showNavButton="true"
+		navButtonPress="onNavBack"
+		>
+	</MessagePage>
+
+</mvc:View>

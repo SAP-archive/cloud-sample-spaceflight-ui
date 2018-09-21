@@ -1,0 +1,105 @@
+<mvc:View xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:semantic="sap.f.semantic" controllerName="com.sap.teched.spacetravelagency.controller.Detail">
+	<Page showHeader="false">
+		<content>
+			<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="false" intro="{Description}" title="Booking ID: {BookingNo}" backgroundDesign="Solid">
+				<statuses>
+					<ObjectStatus title="Departure" text="12-08-2028" state="None"/>
+					<ObjectStatus title="Customer ID" text="{Customer_ID}" state="Error"/>
+					<ObjectStatus title="Destination" text="Venus" state="Success"/>
+				</statuses>
+				<headerContainer>
+					<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter text="Customer" icon="sap-icon://customer" key="key3">
+								<content>
+									<VBox class="sapUiSmallMargin">
+										<form:SimpleForm id="cutomerDataForm" editable="false" layout="ResponsiveGridLayout" title="Customer Details" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
+											<form:content>
+												<core:Title text="Personal Information"/>
+												<Label text="Age"/>
+												<Text text="{Age}"/>
+												<Label text="Gender"/>
+												<Text text="{Gender}"/>
+												<Label text="Passport No."/>
+												<Text text="{/Customer/PassportNumber}"/>
+												<Label text="Nationality"/>
+												<Text text="{Nationality}"/>
+												<Label text="Mobile No."/>
+												<Text text="{MobileNumber}"/>
+												<Label text="Address"/>
+												<Text text="{Address}"/>
+												<core:Title text="Travel Information"/>
+												<Label text="Class"/>
+												<Text text="{Class}"/>
+												<Label text="Meal"/>
+												<Text text="{Meal}"/>
+											</form:content>
+										</form:SimpleForm>
+									</VBox>
+								</content>
+							</IconTabFilter>
+							<IconTabFilter text="Itinerary" icon="sap-icon://travel-itinerary" key="key1">
+								<content>
+									<Table id="earthRoutesTable" inset="false" items="{ path: 'earthRoutes>/EarthRoutes'}">
+										<infoToolbar>
+											<Toolbar active="true">
+												<Label text="Earth Routes"/>
+											</Toolbar>
+										</infoToolbar>
+										<columns>
+											<Column minScreenWidth="Desktop" hAlign="Center">
+												<Text text="Origin"/>
+											</Column>
+											<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+												<Text text="Destination"/>
+											</Column>
+											<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+												<Text text="Duration"/>
+											</Column>
+										</columns>
+										<items>
+											<ColumnListItem>
+												<cells>
+													<ObjectIdentifier title="{earthRoutes>Origin}" text="{}"/>
+													<Text text="{earthRoutes>Destination}"/>
+													<Text text="{earthRoutes>Duration}"/>
+												</cells>
+											</ColumnListItem>
+										</items>
+									</Table>
+									<Table id="spaceRoutesTable" inset="false" items="{ path: 'spaceRoutes>/SpaceRoutes'}">
+										<infoToolbar>
+											<Toolbar active="true">
+												<Label text="Space Routes"/>
+											</Toolbar>
+										</infoToolbar>
+										<columns>
+											<Column minScreenWidth="Desktop" hAlign="Center">
+												<Text text="SpaceLeg"/>
+											</Column>
+											<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+												<Text text="Activity"/>
+											</Column>
+											<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+												<Text text="Duration"/>
+											</Column>
+										</columns>
+										<items>
+											<ColumnListItem>
+												<cells>
+													<ObjectIdentifier title="{spaceRoutes>SpaceLeg}" text="{}"/>
+													<Text text="{spaceRoutes>Activity}"/>
+													<Text text="{spaceRoutes>Duration}"/>
+												</cells>
+											</ColumnListItem>
+										</items>
+									</Table>
+								</content>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</headerContainer>
+			</ObjectHeader>
+		</content>
+	</Page>
+</mvc:View>

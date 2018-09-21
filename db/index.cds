@@ -14,6 +14,13 @@ entity Customers   {
       CustomerName : String(50);
       EmailAddress : String(50);
       PassportNumber : Integer;
+      Age : Integer;
+      Gender : String(10);
+      Nationality : String(50);
+      Phone : String(15);
+      Address: String(100);
+      Class : String(5);
+      Meal : String(5);
 };
 
 extend flight.Bookings {

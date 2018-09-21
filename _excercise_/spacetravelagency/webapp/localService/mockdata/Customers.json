@@ -1,0 +1,81 @@
+[{
+	"ID": "001",
+	"Name": "Vasu Kesiraju",
+	"Email": "Email 1",
+	"__metadata": {
+		"uri": "Customers('Customer_ID%201')",
+		"type": "BookingService.Customers"
+	}
+}, {
+	"ID": "002",
+	"Name": "Name 2",
+	"Email": "Email 2",
+	"__metadata": {
+		"uri": "Customers('Customer_ID%202')",
+		"type": "BookingService.Customers"
+	}
+}, {
+	"ID": "003",
+	"Name": "Name 3",
+	"Email": "Email 3",
+	"__metadata": {
+		"uri": "Customers('Customer_ID%203')",
+		"type": "BookingService.Customers"
+	}
+}, {
+	"ID": "004",
+	"Name": "Name 4",
+	"Email": "Email 4",
+	"__metadata": {
+		"uri": "Customers('Customer_ID%204')",
+		"type": "BookingService.Customers"
+	}
+}, {
+	"ID": "005",
+	"Name": "Name 5",
+	"Email": "Email 5",
+	"__metadata": {
+		"uri": "Customers('Customer_ID%205')",
+		"type": "BookingService.Customers"
+	}
+}, {
+	"ID": "006",
+	"Name": "Name 6",
+	"Email": "Email 6",
+	"__metadata": {
+		"uri": "Customers('Customer_ID%206')",
+		"type": "BookingService.Customers"
+	}
+}, {
+	"ID": "007",
+	"Name": "Name 7",
+	"Email": "Email 7",
+	"__metadata": {
+		"uri": "Customers('Customer_ID%207')",
+		"type": "BookingService.Customers"
+	}
+}, {
+	"ID": "008",
+	"Name": "Name 8",
+	"Email": "Email 8",
+	"__metadata": {
+		"uri": "Customers('Customer_ID%208')",
+		"type": "BookingService.Customers"
+	}
+}, {
+	"ID": "009",
+	"Name": "Name 9",
+	"Email": "Email 9",
+	"__metadata": {
+		"uri": "Customers('Customer_ID%209')",
+		"type": "BookingService.Customers"
+	}
+}, {
+	"ID": "010",
+	"Name": "Name 10",
+	"Email": "Email 10",
+	"__metadata": {
+		"uri": "Customers('Customer_ID%2010')",
+		"type": "BookingService.Customers"
+	}
+}]

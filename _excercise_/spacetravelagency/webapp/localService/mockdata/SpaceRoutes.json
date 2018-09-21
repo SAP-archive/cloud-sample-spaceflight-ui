@@ -1,0 +1,331 @@
+[{
+	"ID": 4086,
+	"Name": "Name 1",
+	"StartsFromOrbit": true,
+	"LandsOnDestinationPlanet": true,
+	"StartingPlanet_ID": 6729,
+	"DestinationPlanet_ID": 6729,
+	"StartingSpaceport_ID": 6515,
+	"DestinationSpaceport_ID": 7536,
+	"__metadata": {
+		"uri": "SpaceRoutes(4086)",
+		"type": "BookingService.SpaceRoutes"
+	},
+	"StartingPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(4086)/StartingPlanet"
+		}
+	},
+	"DestinationPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(4086)/DestinationPlanet"
+		}
+	},
+	"StartingSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(4086)/StartingSpaceport"
+		}
+	},
+	"DestinationSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(4086)/DestinationSpaceport"
+		}
+	}
+}, {
+	"ID": 8175,
+	"Name": "Name 2",
+	"StartsFromOrbit": false,
+	"LandsOnDestinationPlanet": true,
+	"StartingPlanet_ID": 4686,
+	"DestinationPlanet_ID": 4686,
+	"StartingSpaceport_ID": 2512,
+	"DestinationSpaceport_ID": 6562,
+	"__metadata": {
+		"uri": "SpaceRoutes(8175)",
+		"type": "BookingService.SpaceRoutes"
+	},
+	"StartingPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(8175)/StartingPlanet"
+		}
+	},
+	"DestinationPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(8175)/DestinationPlanet"
+		}
+	},
+	"StartingSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(8175)/StartingSpaceport"
+		}
+	},
+	"DestinationSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(8175)/DestinationSpaceport"
+		}
+	}
+}, {
+	"ID": 3112,
+	"Name": "Name 3",
+	"StartsFromOrbit": false,
+	"LandsOnDestinationPlanet": true,
+	"StartingPlanet_ID": 8544,
+	"DestinationPlanet_ID": 8544,
+	"StartingSpaceport_ID": 137,
+	"DestinationSpaceport_ID": 9150,
+	"__metadata": {
+		"uri": "SpaceRoutes(3112)",
+		"type": "BookingService.SpaceRoutes"
+	},
+	"StartingPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(3112)/StartingPlanet"
+		}
+	},
+	"DestinationPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(3112)/DestinationPlanet"
+		}
+	},
+	"StartingSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(3112)/StartingSpaceport"
+		}
+	},
+	"DestinationSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(3112)/DestinationSpaceport"
+		}
+	}
+}, {
+	"ID": 4670,
+	"Name": "Name 4",
+	"StartsFromOrbit": false,
+	"LandsOnDestinationPlanet": false,
+	"StartingPlanet_ID": 322,
+	"DestinationPlanet_ID": 322,
+	"StartingSpaceport_ID": 7780,
+	"DestinationSpaceport_ID": 8299,
+	"__metadata": {
+		"uri": "SpaceRoutes(4670)",
+		"type": "BookingService.SpaceRoutes"
+	},
+	"StartingPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(4670)/StartingPlanet"
+		}
+	},
+	"DestinationPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(4670)/DestinationPlanet"
+		}
+	},
+	"StartingSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(4670)/StartingSpaceport"
+		}
+	},
+	"DestinationSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(4670)/DestinationSpaceport"
+		}
+	}
+}, {
+	"ID": 9511,
+	"Name": "Name 5",
+	"StartsFromOrbit": true,
+	"LandsOnDestinationPlanet": false,
+	"StartingPlanet_ID": 8396,
+	"DestinationPlanet_ID": 8396,
+	"StartingSpaceport_ID": 5335,
+	"DestinationSpaceport_ID": 9854,
+	"__metadata": {
+		"uri": "SpaceRoutes(9511)",
+		"type": "BookingService.SpaceRoutes"
+	},
+	"StartingPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(9511)/StartingPlanet"
+		}
+	},
+	"DestinationPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(9511)/DestinationPlanet"
+		}
+	},
+	"StartingSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(9511)/StartingSpaceport"
+		}
+	},
+	"DestinationSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(9511)/DestinationSpaceport"
+		}
+	}
+}, {
+	"ID": 7773,
+	"Name": "Name 6",
+	"StartsFromOrbit": false,
+	"LandsOnDestinationPlanet": false,
+	"StartingPlanet_ID": 4823,
+	"DestinationPlanet_ID": 4823,
+	"StartingSpaceport_ID": 4766,
+	"DestinationSpaceport_ID": 2970,
+	"__metadata": {
+		"uri": "SpaceRoutes(7773)",
+		"type": "BookingService.SpaceRoutes"
+	},
+	"StartingPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(7773)/StartingPlanet"
+		}
+	},
+	"DestinationPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(7773)/DestinationPlanet"
+		}
+	},
+	"StartingSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(7773)/StartingSpaceport"
+		}
+	},
+	"DestinationSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(7773)/DestinationSpaceport"
+		}
+	}
+}, {
+	"ID": 630,
+	"Name": "Name 7",
+	"StartsFromOrbit": true,
+	"LandsOnDestinationPlanet": true,
+	"StartingPlanet_ID": 6177,
+	"DestinationPlanet_ID": 6177,
+	"StartingSpaceport_ID": 4024,
+	"DestinationSpaceport_ID": 3677,
+	"__metadata": {
+		"uri": "SpaceRoutes(630)",
+		"type": "BookingService.SpaceRoutes"
+	},
+	"StartingPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(630)/StartingPlanet"
+		}
+	},
+	"DestinationPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(630)/DestinationPlanet"
+		}
+	},
+	"StartingSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(630)/StartingSpaceport"
+		}
+	},
+	"DestinationSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(630)/DestinationSpaceport"
+		}
+	}
+}, {
+	"ID": 5848,
+	"Name": "Name 8",
+	"StartsFromOrbit": true,
+	"LandsOnDestinationPlanet": true,
+	"StartingPlanet_ID": 5482,
+	"DestinationPlanet_ID": 5482,
+	"StartingSpaceport_ID": 9159,
+	"DestinationSpaceport_ID": 6749,
+	"__metadata": {
+		"uri": "SpaceRoutes(5848)",
+		"type": "BookingService.SpaceRoutes"
+	},
+	"StartingPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(5848)/StartingPlanet"
+		}
+	},
+	"DestinationPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(5848)/DestinationPlanet"
+		}
+	},
+	"StartingSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(5848)/StartingSpaceport"
+		}
+	},
+	"DestinationSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(5848)/DestinationSpaceport"
+		}
+	}
+}, {
+	"ID": 8660,
+	"Name": "Name 9",
+	"StartsFromOrbit": false,
+	"LandsOnDestinationPlanet": false,
+	"StartingPlanet_ID": 8548,
+	"DestinationPlanet_ID": 8548,
+	"StartingSpaceport_ID": 3348,
+	"DestinationSpaceport_ID": 3929,
+	"__metadata": {
+		"uri": "SpaceRoutes(8660)",
+		"type": "BookingService.SpaceRoutes"
+	},
+	"StartingPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(8660)/StartingPlanet"
+		}
+	},
+	"DestinationPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(8660)/DestinationPlanet"
+		}
+	},
+	"StartingSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(8660)/StartingSpaceport"
+		}
+	},
+	"DestinationSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(8660)/DestinationSpaceport"
+		}
+	}
+}, {
+	"ID": 9898,
+	"Name": "Name 10",
+	"StartsFromOrbit": true,
+	"LandsOnDestinationPlanet": false,
+	"StartingPlanet_ID": 6358,
+	"DestinationPlanet_ID": 6358,
+	"StartingSpaceport_ID": 9023,
+	"DestinationSpaceport_ID": 9605,
+	"__metadata": {
+		"uri": "SpaceRoutes(9898)",
+		"type": "BookingService.SpaceRoutes"
+	},
+	"StartingPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(9898)/StartingPlanet"
+		}
+	},
+	"DestinationPlanet": {
+		"__deferred": {
+			"uri": "SpaceRoutes(9898)/DestinationPlanet"
+		}
+	},
+	"StartingSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(9898)/StartingSpaceport"
+		}
+	},
+	"DestinationSpaceport": {
+		"__deferred": {
+			"uri": "SpaceRoutes(9898)/DestinationSpaceport"
+		}
+	}
+}]

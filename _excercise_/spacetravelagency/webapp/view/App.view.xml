@@ -1,0 +1,18 @@
+<mvc:View
+	controllerName="com.sap.teched.spacetravelagency.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+	xmlns="sap.f"
+	xmlns:m="sap.m"
+	height="100%">
+	<m:App
+		id="app"
+		busy="{appView>/busy}"
+		busyIndicatorDelay="{appView>/delay}">
+		<FlexibleColumnLayout
+			id="layout"
+			layout="{appView>/layout}"
+			backgroundDesign="Translucent">
+		</FlexibleColumnLayout>
+	</m:App>
+</mvc:View>

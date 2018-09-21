@@ -1,0 +1,25 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:vbm="sap.ui.vbm"
+	controllerName="com.sap.teched.spacetravelagency.controller.Dashboard" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Busiest Routes" showNavButton="true" navButtonPress="goBack">
+				<content>
+					<vbm:AnalyticMap id="vbi" width="100%" xmlns:l="sap.ui.layout" height="100%" regionClick="onRegionClick"
+						regionContextMenu="onRegionContextMenu">
+						<vbm:vos>
+							<vbm:Routes items="{busiestRoutes>/Routes}">
+								<vbm:Route position="{busiestRoutes>position}" color="rgb(117,148,34)" colorBorder="rgb(255,255,255)" linewidth="3" routetype="Geodesic"
+									click="onClickRoute" contextMenu="onContextMenuRoute"/>
+							</vbm:Routes>
+						</vbm:vos>
+						<vbm:legend>
+							<vbm:Legend id="legend" caption="Legend" items="{/Legend}">
+								<vbm:LegendItem text="{text}" color="{color}"/>
+							</vbm:Legend>
+						</vbm:legend>
+					</vbm:AnalyticMap>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
