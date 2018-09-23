@@ -27,6 +27,18 @@ modules:
       - name: srv_api
         properties:
           url: '${default-url}'
+
+  - name: nodejs
+    type: nodejs
+    path: nodejs
+    provides:
+     - name: nodejs_api
+       properties:
+          url: ${default-url}
+    requires:
+     - name: db
+     - name: cloud-sample-spaceflight-ui-hdi-container
+
 resources:
   - name: cloud-sample-spaceflight-ui-hdi-container
     properties:

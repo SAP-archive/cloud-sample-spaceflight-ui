@@ -1,0 +1,3 @@
+service {
+  "airportsDemo" as "AirportsDemo" keys generate local "ID";
+}

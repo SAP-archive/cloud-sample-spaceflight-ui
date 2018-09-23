@@ -1,0 +1,79 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	controllerName="com.sap.teched.spacetravelagency.controller.AddBooking" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Create New Booking">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:Form id="FormChange354" minWidth="1024" maxContainerCols="2" editable="true">
+							<f:title>
+								<core:Title text="Booking Details"/>
+							</f:title>
+							<f:layout>
+								<f:ResponsiveGridLayout labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1"/>
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+										<f:FormElement label="Destination">
+											<f:fields>
+												<Select width="100%" id="spaceDestinations" selectedKey="{SpaceDestination}">
+													<items>
+														<core:Item text="Moon" key="Moon"/>
+														<core:Item text="Mars" key="Mars"/>
+														<core:Item text="Saturn" key="Saturn"/>
+														<core:Item text="Jupiter" key="Jupiter"/>
+														<core:Item text="Earth's Orbit" key="Earth's Orbit"/>
+														<core:Item text="Uranus" key="Uranus"/>
+														<core:Item text="Neptune" key="Neptune"/>
+													</items>
+												</Select>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Select Travel Itinerary">
+											<f:fields>
+												<SearchField id="searchItineraryField" placeholder="search for Itineraries" enableSuggestions="true" search="onItinerarySearch" suggest="onItinerarySuggest"
+													suggestionItems="{ path: '/Itineraries', sorter: { path: 'Name' } }">
+													<suggestionItems>
+														<SuggestionItem text="{Name}" key="{ID}"/>
+													</suggestionItems>
+												</SearchField>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Customer Name">
+											<f:fields>
+												<SearchField id="searchCustomersField" placeholder="search for Customers" enableSuggestions="true" search="onCustomersSearch" suggest="onCutomersSuggest"
+													suggestionItems="{ path: '/Customers', sorter: { path: 'CustomerName', descending: false }}">
+													<suggestionItems>
+														<SuggestionItem text="{CustomerName}" description="({ID})" key="{ID}"/>
+													</suggestionItems>
+												</SearchField>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Date Of Travel">
+											<f:fields>
+												<DatePicker id="DP2" value="2014-03-26" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="NumberOfPassengers">
+											<f:fields>
+												<Input id="numberOfPassengersInput" type="Number"/>
+											</f:fields>
+										</f:FormElement>
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+						</f:Form>
+					</VBox>
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button text="Create" type="Accept"/>
+						<Button text="Exit" type="Reject" press="goBack"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

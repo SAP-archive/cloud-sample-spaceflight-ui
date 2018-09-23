@@ -95,6 +95,12 @@
 				"name": "Dashboard",
 				"pattern": "Dashboard",
 				"target": ["Dashboard"]
+			}, {
+				"name": "AddBooking",
+				"pattern": "AddBooking",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["AddBooking"]
 			}],
 			"targets": {
 				"master": {
@@ -154,6 +160,20 @@
 				"Dashboard": {
 					"viewType": "XML",
 					"viewName": "Dashboard",
+					"controlAggregation": "midColumnPages",
+					"routerClass": "sap.f.routing.Router",
+					"viewPath": "com.sap.teched.spacetravelagency.view",
+					"controlId": "layout",
+					"bypassed": {
+						"target": "notFound"
+					},
+					"async": true
+				},
+				"AddBooking": {
+					"viewType": "XML",
+					"viewName": "AddBooking",
+					"viewPath": "com.sap.teched.spacetravelagency.view",
+					"controlId": "layout",
 					"controlAggregation": "midColumnPages"
 				}
 			}

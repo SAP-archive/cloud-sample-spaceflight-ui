@@ -38,7 +38,7 @@
 			</List>
 		</semantic:content>
 			<semantic:footerCustomActions>
-			<Button icon="sap-icon://add-coursebook" text="Add Booking" press="onAddBookingButtonPress"/>
+			<Button icon="sap-icon://add-coursebook" text="Add Booking" press="addBooking" xmlns:addBooking="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" addBooking:wiring="\{'press':\{'navigation':\{'routeName':'AddBooking'\}\}\}"/>
 			<Button icon="sap-icon://geographic-bubble-chart" text="Show Dashboard" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'Dashboard'\}\}\}"/>
 		</semantic:footerCustomActions>
 	</semantic:SemanticPage>
