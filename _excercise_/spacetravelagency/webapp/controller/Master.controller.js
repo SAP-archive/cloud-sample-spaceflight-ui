@@ -305,6 +305,10 @@ sap.ui.define([
 			oViewModel.setProperty("/filterBarLabel", this.getResourceBundle().getText("masterFilterBarText", [sFilterBarText]));
 		},
 		
+		addCustomer: function(oEvent){
+			alert("Tomorrow Morning");	
+		},
+		
 		addBooking: function (oEvent) {
 			var that = this;
 			var actionParameters = JSON.parse(oEvent.getSource().data("wiring").replace(/'/g, "\""));

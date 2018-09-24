@@ -1,7 +1,9 @@
-<mvc:View xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:semantic="sap.f.semantic" controllerName="com.sap.teched.spacetravelagency.controller.Detail">
+<mvc:View xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns:semantic="sap.f.semantic" controllerName="com.sap.teched.spacetravelagency.controller.Detail">
 	<Page showHeader="false">
 		<content>
-			<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="false" intro="{Description}" title="Booking ID: {BookingNo}" backgroundDesign="Solid">
+			<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="false" intro="{Description}" title="Booking ID: {BookingNo}"
+				backgroundDesign="Solid">
 				<statuses>
 					<ObjectStatus title="Departure" text="12-08-2028" state="None"/>
 					<ObjectStatus title="Customer ID" text="{Customer_ID}" state="Error"/>
@@ -13,26 +15,30 @@
 							<IconTabFilter text="Customer" icon="sap-icon://customer" key="key3">
 								<content>
 									<VBox class="sapUiSmallMargin">
-										<form:SimpleForm id="cutomerDataForm" editable="false" layout="ResponsiveGridLayout" title="Customer Details" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
+										<form:SimpleForm id="cutomerDataForm" editable="false" maxContainerCols="2" layout="ResponsiveGridLayout" title="Customer Details"
+											labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0"
+											emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
 											<form:content>
 												<core:Title text="Personal Information"/>
+												<Label text="Name"/>
+												<Text text="{Customer/CustomerName}"/>
 												<Label text="Age"/>
-												<Text text="{Age}"/>
+												<Text text="{Customer/Age}"/>
 												<Label text="Gender"/>
-												<Text text="{Gender}"/>
+												<Text text="{Customer/Gender}"/>
 												<Label text="Passport No."/>
-												<Text text="{/Customer/PassportNumber}"/>
+												<Text text="{Customer/PassportNumber}"/>
 												<Label text="Nationality"/>
-												<Text text="{Nationality}"/>
-												<Label text="Mobile No."/>
-												<Text text="{MobileNumber}"/>
+												<Text text="{Customer/Nationality}"/>
+												<Label text="Contact No."/>
+												<Text text="{Customer/Phone}"/>
 												<Label text="Address"/>
-												<Text text="{Address}"/>
+												<Text text="{Customer/Address}"/>
 												<core:Title text="Travel Information"/>
 												<Label text="Class"/>
-												<Text text="{Class}"/>
+												<Text text="{Customer/Class}"/>
 												<Label text="Meal"/>
-												<Text text="{Meal}"/>
+												<Text text="{Customer/Meal}"/>
 											</form:content>
 										</form:SimpleForm>
 									</VBox>
@@ -41,6 +47,11 @@
 							<IconTabFilter text="Itinerary" icon="sap-icon://travel-itinerary" key="key1">
 								<content>
 									<Table id="earthRoutesTable" inset="false" items="{ path: 'earthRoutes>/EarthRoutes'}">
+										<headerToolbar>
+											<Toolbar>
+												<Title text="{Itinerary/Name}" level="H1"/>
+											</Toolbar>
+										</headerToolbar>
 										<infoToolbar>
 											<Toolbar active="true">
 												<Label text="Earth Routes"/>

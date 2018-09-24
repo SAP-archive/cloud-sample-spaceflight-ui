@@ -1,11 +1,16 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:semantic="sap.f.semantic" controllerName="com.sap.teched.spacetravelagency.controller.Master">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:semantic="sap.f.semantic"
+	controllerName="com.sap.teched.spacetravelagency.controller.Master">
 	<semantic:SemanticPage id="masterPage" preserveHeaderStateOnScroll="true" toggleHeaderOnTitleClick="false" showFooter="true">
 		<semantic:titleHeading>
 			<Title id="masterPageTitle" text="{masterView&gt;/title}"/>
 		</semantic:titleHeading>
 		<semantic:content>
 			<!-- For client side filtering add this to the items attribute: parameters: {operationMode: 'Client'}}" -->
-			<List id="list" width="auto" class="sapFDynamicPageAlignContent" items="{ path: '/Bookings', sorter: { path: 'BookingNo', descending: false }, groupHeaderFactory: '.createGroupHeader' }" busyIndicatorDelay="{masterView&gt;/delay}" noDataText="{masterView&gt;/noDataText}" mode="{= ${device&gt;/system/phone} ? 'None' : 'SingleSelectMaster'}" growing="true" growingScrollToLoad="true" updateFinished="onUpdateFinished" selectionChange="onSelectionChange">
+			<List id="list" width="auto" class="sapFDynamicPageAlignContent"
+				items="{ path: '/Bookings', parameters: {expand: 'Customer,Itinerary' },sorter: { path: 'BookingNo', descending: false }, groupHeaderFactory: '.createGroupHeader' }"
+				busyIndicatorDelay="{masterView&gt;/delay}" noDataText="{masterView&gt;/noDataText}"
+				mode="{= ${device&gt;/system/phone} ? 'None' : 'SingleSelectMaster'}" growing="true" growingScrollToLoad="true"
+				updateFinished="onUpdateFinished" selectionChange="onSelectionChange">
 				<infoToolbar>
 					<Toolbar active="true" id="filterBar" visible="{masterView&gt;/isFilterBarVisible}" press="onOpenViewSettings">
 						<Title id="filterBarLabel" text="{masterView&gt;/filterBarLabel}"/>
@@ -25,7 +30,8 @@
 					</OverflowToolbar>
 				</headerToolbar>
 				<items>
-					<ObjectListItem type="Navigation" press="onSelectionChange" title="{BookingNo}" number="{ path: 'DateOfTravel', formatter: '.formatter.dateFormat' }">
+					<ObjectListItem type="Navigation" press="onSelectionChange" title="{BookingNo}"
+						number="{ path: 'DateOfTravel', formatter: '.formatter.dateFormat' }">
 						<firstStatus>
 							<ObjectStatus text="{Destination}" state="Success"/>
 						</firstStatus>
@@ -37,9 +43,14 @@
 				</items>
 			</List>
 		</semantic:content>
-			<semantic:footerCustomActions>
-			<Button icon="sap-icon://add-coursebook" text="Add Booking" press="addBooking" xmlns:addBooking="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" addBooking:wiring="\{'press':\{'navigation':\{'routeName':'AddBooking'\}\}\}"/>
-			<Button icon="sap-icon://geographic-bubble-chart" text="Show Dashboard" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'Dashboard'\}\}\}"/>
+		<semantic:footerCustomActions>
+			<Button icon="sap-icon://add-contact" text="Add Customer" press="addCustomer"/>
+			<Button icon="sap-icon://add-coursebook" text="Add Booking" press="addBooking"
+				xmlns:addBooking="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+				addBooking:wiring="\{'press':\{'navigation':\{'routeName':'AddBooking'\}\}\}"/>
+			<Button icon="sap-icon://geographic-bubble-chart" text="Show Dashboard" press="action"
+				xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+				action:wiring="\{'press':\{'navigation':\{'routeName':'Dashboard'\}\}\}"/>
 		</semantic:footerCustomActions>
 	</semantic:SemanticPage>
 </mvc:View>

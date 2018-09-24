@@ -7,7 +7,7 @@
 					<VBox class="sapUiSmallMargin">
 						<f:Form id="FormChange354" minWidth="1024" maxContainerCols="2" editable="true">
 							<f:title>
-								<core:Title text="Booking Details"/>
+								<core:Title text="Enter Booking Details :"/>
 							</f:title>
 							<f:layout>
 								<f:ResponsiveGridLayout labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1"/>
@@ -52,7 +52,7 @@
 										</f:FormElement>
 										<f:FormElement label="Date Of Travel">
 											<f:fields>
-												<DatePicker id="DP2" value="2014-03-26" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange"/>
+												<DatePicker id="dateOfTravelDP" value="2014-03-26" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange"/>
 											</f:fields>
 										</f:FormElement>
 										<f:FormElement label="NumberOfPassengers">
@@ -69,7 +69,7 @@
 				<footer>
 					<Toolbar>
 						<ToolbarSpacer/>
-						<Button text="Create" type="Accept"/>
+						<Button text="Create" type="Accept" press="createBooking"/>
 						<Button text="Exit" type="Reject" press="goBack"/>
 					</Toolbar>
 				</footer>

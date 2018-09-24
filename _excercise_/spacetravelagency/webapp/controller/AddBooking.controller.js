@@ -60,7 +60,30 @@ sap.ui.define([
 				oSearchCustomerField.suggest();
 			});
 		},
-		
+
+		createBooking: function () {
+		/*	var oView = this.getView();
+			var oModel = oView.getModel();
+			var oBooking = {};
+			oBooking.createdAt = new Date();
+			oBooking.createdBy = "Spicy Space Travels";
+			oBooking.Customer_ID = oView.byId("searchCustomersField").getValue() ;
+			oBooking.Itinerary_ID = oView.byId("searchItineraryField").getValue();
+			oBooking.DateOfTravel = oView.byId("dateOfTravelDP").getValue();
+			oBooking.NumberOfPassengers = oView.byId("numberOfPassengersInput").getValue();
+		//	oBooking.Cost = ; Get from where ?
+		//	oBooking.CustomerName = ; Why Do I need this ?
+			oModel.create('/Bookings', oBooking, null, function () {
+				sap.ui.commons.MessageBox.show(
+					sap.m.MessageToast.show("Success!");
+				);
+			}, function () {
+				sap.m.MessageToast.show("Error!");
+			})*/
+
+			alert("Do it along with Pankaj");
+		},
+
 		goBack: function () {
 			var oHistory = History.getInstance();
 			var sPreviousHash = oHistory.getPreviousHash();
