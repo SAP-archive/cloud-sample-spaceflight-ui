@@ -1,0 +1,85 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"  xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	controllerName="com.sap.teched.spacetravelagency.controller.AddCustomer" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Create New Customer">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:Form id="FormChange354" minWidth="1024" maxContainerCols="2" editable="true">
+							<f:title>
+								<core:Title text="Enter Customer Details :"/>
+							</f:title>
+							<f:layout>
+								<f:ResponsiveGridLayout labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1"/>
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+										<f:FormElement label="Name">
+											<f:fields>
+												<Input id="nameInput" type="Text"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Age">
+											<f:fields>
+												<Input id="ageInput" type="Number"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Gender">
+											<f:fields>
+												<Select width="100%" id="genderSelect">
+													<items>
+														<core:Item text="Female" key="Female"/>
+														<core:Item text="Male" key="Male"/>
+														<core:Item text="Others" key="Others"/>
+													</items>
+												</Select>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Nationality">
+											<f:fields>
+												<Input id="nationalityInput" type="Text" placeholder="Enter Nationality..." showSuggestion="true" filterSuggests="true"
+													suggestionItems="{nationalities>/Nationalities}">
+													<suggestionItems>
+														<core:Item text="{nationalities>}"/>
+													</suggestionItems>
+												</Input>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Email">
+											<f:fields>
+												<Input id="emailInput" type="Email"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Contact Number">
+											<f:fields>
+												<Input id="contactInput" type="Telephone"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Passport Number">
+											<f:fields>
+												<Input id="passportInput" type="Text"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Address">
+											<f:fields>
+												<TextArea id="addressInput"/>
+											</f:fields>
+										</f:FormElement>
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+						</f:Form>
+					</VBox>
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button text="Create" type="Accept" press="createCustomer"/>
+						<Button text="Exit" type="Reject" press="goBack"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

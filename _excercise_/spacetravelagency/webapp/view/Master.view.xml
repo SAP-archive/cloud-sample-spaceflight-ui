@@ -33,21 +33,22 @@
 					<ObjectListItem type="Navigation" press="onSelectionChange" title="{BookingNo}"
 						number="{ path: 'DateOfTravel', formatter: '.formatter.dateFormat' }">
 						<firstStatus>
-							<ObjectStatus text="{Destination}" state="Success"/>
+							<ObjectStatus text="{Cost} USD" state="Success"/>
 						</firstStatus>
 						<attributes>
-							<ObjectAttribute text="{CustomerName}"/>
-							<ObjectAttribute text="{EmailAddress}"/>
+							<ObjectAttribute text="{Customer/CustomerName} ({NumberOfPassengers})"/>
 						</attributes>
 					</ObjectListItem>
 				</items>
 			</List>
 		</semantic:content>
 		<semantic:footerCustomActions>
-			<Button icon="sap-icon://add-contact" text="Add Customer" press="addCustomer"/>
-			<Button icon="sap-icon://add-coursebook" text="Add Booking" press="addBooking"
-				xmlns:addBooking="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
-				addBooking:wiring="\{'press':\{'navigation':\{'routeName':'AddBooking'\}\}\}"/>
+			<Button icon="sap-icon://add-contact" text="Add Customer" press="action"
+				xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+				action:wiring="\{'press':\{'navigation':\{'routeName':'AddCustomer'\}\}\}"/>
+			<Button icon="sap-icon://add-coursebook" text="Add Booking"  press="action"
+				xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+				action:wiring="\{'press':\{'navigation':\{'routeName':'AddBooking'\}\}\}"/>
 			<Button icon="sap-icon://geographic-bubble-chart" text="Show Dashboard" press="action"
 				xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
 				action:wiring="\{'press':\{'navigation':\{'routeName':'Dashboard'\}\}\}"/>

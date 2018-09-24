@@ -15,49 +15,63 @@
 							<f:formContainers>
 								<f:FormContainer>
 									<f:formElements>
-										<f:FormElement label="Destination">
+										<f:FormElement label="Booking Number">
 											<f:fields>
-												<Select width="100%" id="spaceDestinations" selectedKey="{SpaceDestination}">
-													<items>
-														<core:Item text="Moon" key="Moon"/>
-														<core:Item text="Mars" key="Mars"/>
-														<core:Item text="Saturn" key="Saturn"/>
-														<core:Item text="Jupiter" key="Jupiter"/>
-														<core:Item text="Earth's Orbit" key="Earth's Orbit"/>
-														<core:Item text="Uranus" key="Uranus"/>
-														<core:Item text="Neptune" key="Neptune"/>
-													</items>
-												</Select>
+												<Input id="bookingNoInput" type="Text"/>
 											</f:fields>
 										</f:FormElement>
 										<f:FormElement label="Select Travel Itinerary">
 											<f:fields>
-												<SearchField id="searchItineraryField" placeholder="search for Itineraries" enableSuggestions="true" search="onItinerarySearch" suggest="onItinerarySuggest"
+												<Input id="searchItineraryField" type="Text" placeholder="search for Itineraries" showSuggestion="true" filterSuggests="true"
 													suggestionItems="{ path: '/Itineraries', sorter: { path: 'Name' } }">
 													<suggestionItems>
-														<SuggestionItem text="{Name}" key="{ID}"/>
+														<core:Item text="{Name}" key="{ID}"/>
 													</suggestionItems>
-												</SearchField>
+												</Input>
 											</f:fields>
 										</f:FormElement>
 										<f:FormElement label="Customer Name">
 											<f:fields>
-												<SearchField id="searchCustomersField" placeholder="search for Customers" enableSuggestions="true" search="onCustomersSearch" suggest="onCutomersSuggest"
+												<Input id="searchCustomersField" type="Text" placeholder="search for Customers" showSuggestion="true" filterSuggests="true"
 													suggestionItems="{ path: '/Customers', sorter: { path: 'CustomerName', descending: false }}">
 													<suggestionItems>
-														<SuggestionItem text="{CustomerName}" description="({ID})" key="{ID}"/>
+														<core:Item text="{CustomerName}" description="({ID})" key="{ID}"/>
 													</suggestionItems>
-												</SearchField>
+												</Input>
 											</f:fields>
 										</f:FormElement>
 										<f:FormElement label="Date Of Travel">
 											<f:fields>
-												<DatePicker id="dateOfTravelDP" value="2014-03-26" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange"/>
+												<DatePicker id="dateOfTravelDP" displayFormat="long" change="handleChange"/>
 											</f:fields>
 										</f:FormElement>
 										<f:FormElement label="NumberOfPassengers">
 											<f:fields>
 												<Input id="numberOfPassengersInput" type="Number"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Meal Type">
+											<f:fields>
+												<Select width="100%" id="mealTypeSelect" selectedKey="Vegetarian">
+													<items>
+														<core:Item text="Asian Vegetarian" key="AsianVeg"/>
+														<core:Item text="Asian Non Vegetarian" key="AsianNonVeg"/>
+														<core:Item text="Non Vegetarian" key="NonVegetarian"/>
+														<core:Item text="Vegetarian" key="Vegetarian"/>
+														<core:Item text="Vegan" key="Vegan"/>
+													</items>
+												</Select>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Travel Class">
+											<f:fields>
+												<Select width="100%" id="ticketTypeSelect" selectedKey="EconomyClass">
+													<items>
+														<core:Item text="Economy Class" key="EconomyClass"/>
+														<core:Item text="First Class" key="FirstClass"/>
+														<core:Item text="Business Class" key="BusinessClass"/>
+													</items>
+												</Select>
 											</f:fields>
 										</f:FormElement>
 									</f:formElements>

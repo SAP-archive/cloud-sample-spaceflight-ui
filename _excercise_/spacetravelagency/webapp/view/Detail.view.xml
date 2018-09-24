@@ -2,12 +2,13 @@
 	xmlns:semantic="sap.f.semantic" controllerName="com.sap.teched.spacetravelagency.controller.Detail">
 	<Page showHeader="false">
 		<content>
-			<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="false" intro="{Description}" title="Booking ID: {BookingNo}"
+			<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="false" title="Booking ID: {BookingNo}"
 				backgroundDesign="Solid">
 				<statuses>
-					<ObjectStatus title="Departure" text="12-08-2028" state="None"/>
-					<ObjectStatus title="Customer ID" text="{Customer_ID}" state="Error"/>
-					<ObjectStatus title="Destination" text="Venus" state="Success"/>
+					<ObjectStatus title="Customer Name" text="{Customer/CustomerName}"/>
+					<ObjectStatus title="Number Of Passengers" text="{NumberOfPassengers}" state="Success"/>
+					<ObjectStatus title="Departure" text="{ path: 'DateOfTravel', formatter: '.formatter.dateFormat' }" state="None"/>
+					<ObjectStatus title="Ticket Price" text="{Cost} USD" state="Error"/>
 				</statuses>
 				<headerContainer>
 					<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
@@ -20,8 +21,8 @@
 											emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
 											<form:content>
 												<core:Title text="Personal Information"/>
-												<Label text="Name"/>
-												<Text text="{Customer/CustomerName}"/>
+												<Label text="E-mail"/>
+												<Text text="{Customer/EmailAddress}"/>
 												<Label text="Age"/>
 												<Text text="{Customer/Age}"/>
 												<Label text="Gender"/>
@@ -36,9 +37,9 @@
 												<Text text="{Customer/Address}"/>
 												<core:Title text="Travel Information"/>
 												<Label text="Class"/>
-												<Text text="{Customer/Class}"/>
+												<Text text="{Class}"/>
 												<Label text="Meal"/>
-												<Text text="{Customer/Meal}"/>
+												<Text text="{Meal}"/>
 											</form:content>
 										</form:SimpleForm>
 									</VBox>

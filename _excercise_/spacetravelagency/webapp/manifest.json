@@ -101,6 +101,12 @@
 				"titleTarget": "",
 				"greedy": false,
 				"target": ["AddBooking"]
+			}, {
+				"name": "AddCustomer",
+				"pattern": "AddCustomer",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["AddCustomer"]
 			}],
 			"targets": {
 				"master": {
@@ -174,7 +180,19 @@
 					"viewName": "AddBooking",
 					"viewPath": "com.sap.teched.spacetravelagency.view",
 					"controlId": "layout",
-					"controlAggregation": "midColumnPages"
+					"controlAggregation": "midColumnPages",
+					"routerClass": "sap.f.routing.Router",
+					"bypassed": {
+						"target": "notFound"
+					},
+					"async": true
+				},
+				"AddCustomer": {
+					"viewType": "XML",
+					"viewName": "AddCustomer",
+					"controlAggregation": "midColumnPages",
+					"controlId": "layout",
+					"viewPath": "com.sap.teched.spacetravelagency.view"
 				}
 			}
 		}
