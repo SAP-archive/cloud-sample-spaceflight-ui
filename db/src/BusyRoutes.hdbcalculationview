@@ -1,12 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="BusyRoutes" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="HOURLY" enforceSqlExecution="false">
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="BusyRoutes" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="HOURLY" enforceSqlExecution="false">
 <descriptions defaultDescription="BusyRoutes"/>
 <localVariables/>
 <variableMappings/>
-<dataSources/>
-<calculationViews/>
-<logicalModel>
-  <attributes/>
+<dataSources>
+  <DataSource id="TECHED_FLIGHT_TRIP_EARTHROUTES">
+    <resourceUri>TECHED_FLIGHT_TRIP_EARTHROUTES</resourceUri>
+  </DataSource>
+  <DataSource id="TECHED_FLIGHT_TRIP_AIRPORTS">
+    <resourceUri>TECHED_FLIGHT_TRIP_AIRPORTS</resourceUri>
+  </DataSource>
+  <DataSource id="Projection_3$$$$TECHED_FLIGHT_TRIP_EARTHROUTES$$">
+    <resourceUri>TECHED_FLIGHT_TRIP_EARTHROUTES</resourceUri>
+  </DataSource>
+  <DataSource id="Projection_4$$$$TECHED_FLIGHT_TRIP_AIRPORTS$$">
+    <resourceUri>TECHED_FLIGHT_TRIP_AIRPORTS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+    <viewAttributes>
+      <viewAttribute id="STARTINGAIRPORT_IATA3">
+        <descriptions defaultDescription="STARTINGAIRPORT_IATA3"/>
+      </viewAttribute>
+      <viewAttribute id="DISTANCE">
+        <descriptions defaultDescription="DISTANCE"/>
+      </viewAttribute>
+    
+      <viewAttribute id="ID">
+        <descriptions defaultDescription="ID"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="TECHED_FLIGHT_TRIP_EARTHROUTES">
+      <mapping xsi:type="Calculation:AttributeMapping" target="STARTINGAIRPORT_IATA3" source="STARTINGAIRPORT_IATA3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DISTANCE" source="DISTANCE"/>
+    
+      <mapping xsi:type="Calculation:AttributeMapping" target="ID" source="ID"/>
+    </input>
+  </calculationView>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_2">
+    <viewAttributes>
+      <viewAttribute id="IATA3">
+        <descriptions defaultDescription="IATA3"/>
+      </viewAttribute>
+      <viewAttribute id="NAME">
+        <descriptions defaultDescription="NAME"/>
+      </viewAttribute>
+      <viewAttribute id="LATITUDE">
+        <descriptions defaultDescription="LATITUDE"/>
+      </viewAttribute>
+      <viewAttribute id="LONGITUDE">
+        <descriptions defaultDescription="LONGITUDE"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="TECHED_FLIGHT_TRIP_AIRPORTS">
+      <mapping xsi:type="Calculation:AttributeMapping" target="IATA3" source="IATA3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME" source="NAME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LATITUDE" source="LATITUDE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LONGITUDE" source="LONGITUDE"/>
+    </input>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" cardinality="CN_1" joinType="inner">
+    <viewAttributes>
+      <viewAttribute id="STARTINGAIRPORT_IATA3">
+        <descriptions defaultDescription="STARTINGAIRPORT_IATA3"/>
+      </viewAttribute>
+      <viewAttribute id="DISTANCE">
+        <descriptions defaultDescription="DISTANCE"/>
+      </viewAttribute>
+      <viewAttribute id="NAME">
+        <descriptions defaultDescription="NAME"/>
+      </viewAttribute>
+      <viewAttribute id="LATITUDE">
+        <descriptions defaultDescription="LATITUDE"/>
+      </viewAttribute>
+      <viewAttribute id="LONGITUDE">
+        <descriptions defaultDescription="LONGITUDE"/>
+      </viewAttribute>
+      <viewAttribute id="ID">
+        <descriptions defaultDescription="ID"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Projection_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="STARTINGAIRPORT_IATA3" source="STARTINGAIRPORT_IATA3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DISTANCE" source="DISTANCE"/>
+    
+      <mapping xsi:type="Calculation:AttributeMapping" target="ID" source="ID"/>
+    </input>
+    <input node="Projection_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME" source="NAME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LATITUDE" source="LATITUDE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LONGITUDE" source="LONGITUDE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="STARTINGAIRPORT_IATA3" source="IATA3"/>
+    </input>
+    <joinAttribute name="STARTINGAIRPORT_IATA3"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_3">
+    <viewAttributes>
+      <viewAttribute id="DISTANCE">
+        <descriptions defaultDescription="DISTANCE"/>
+      </viewAttribute>
+      <viewAttribute id="DESTINATIONAIRPORT_IATA3">
+        <descriptions defaultDescription="DESTINATIONAIRPORT_IATA3"/>
+      </viewAttribute>
+      <viewAttribute id="ID">
+        <descriptions defaultDescription="ID"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Projection_3$$$$TECHED_FLIGHT_TRIP_EARTHROUTES$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="DISTANCE" source="DISTANCE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DESTINATIONAIRPORT_IATA3" source="DESTINATIONAIRPORT_IATA3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ID" source="ID"/>
+    </input>
+  </calculationView>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_4">
+    <viewAttributes>
+      <viewAttribute id="IATA3">
+        <descriptions defaultDescription="IATA3"/>
+      </viewAttribute>
+      <viewAttribute id="NAME">
+        <descriptions defaultDescription="NAME"/>
+      </viewAttribute>
+      <viewAttribute id="LATITUDE">
+        <descriptions defaultDescription="LATITUDE"/>
+      </viewAttribute>
+      <viewAttribute id="LONGITUDE">
+        <descriptions defaultDescription="LONGITUDE"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Projection_4$$$$TECHED_FLIGHT_TRIP_AIRPORTS$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="IATA3" source="IATA3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME" source="NAME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LATITUDE" source="LATITUDE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LONGITUDE" source="LONGITUDE"/>
+    </input>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_2" cardinality="CN_1" joinType="inner">
+    <viewAttributes>
+      <viewAttribute id="DISTANCE">
+        <descriptions defaultDescription="DISTANCE"/>
+      </viewAttribute>
+      <viewAttribute id="DESTINATIONAIRPORT_IATA3">
+        <descriptions defaultDescription="DESTINATIONAIRPORT_IATA3"/>
+      </viewAttribute>
+      <viewAttribute id="ID">
+        <descriptions defaultDescription="ID"/>
+      </viewAttribute>
+      <viewAttribute id="NAME">
+        <descriptions defaultDescription="NAME"/>
+      </viewAttribute>
+      <viewAttribute id="LATITUDE">
+        <descriptions defaultDescription="LATITUDE"/>
+      </viewAttribute>
+      <viewAttribute id="LONGITUDE">
+        <descriptions defaultDescription="LONGITUDE"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Projection_3">
+      <mapping xsi:type="Calculation:AttributeMapping" target="DISTANCE" source="DISTANCE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DESTINATIONAIRPORT_IATA3" source="DESTINATIONAIRPORT_IATA3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ID" source="ID"/>
+    </input>
+    <input node="Projection_4">
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME" source="NAME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LATITUDE" source="LATITUDE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LONGITUDE" source="LONGITUDE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DESTINATIONAIRPORT_IATA3" source="IATA3"/>
+    </input>
+    <joinAttribute name="DESTINATIONAIRPORT_IATA3"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_3" cardinality="C1_1" joinType="inner">
+    <viewAttributes>
+      <viewAttribute id="ID">
+        <descriptions defaultDescription="ID"/>
+      </viewAttribute>
+      <viewAttribute id="STARTINGAIRPORT_IATA3">
+        <descriptions defaultDescription="STARTINGAIRPORT_IATA3"/>
+      </viewAttribute>
+      <viewAttribute id="DESTINATIONAIRPORT_IATA3">
+        <descriptions defaultDescription="DESTINATIONAIRPORT_IATA3"/>
+      </viewAttribute>
+      <viewAttribute id="LATITUDE_START">
+        <descriptions defaultDescription="LATITUDE"/>
+      </viewAttribute>
+      <viewAttribute id="LONGITUDE_START">
+        <descriptions defaultDescription="LONGITUDE"/>
+      </viewAttribute>
+      <viewAttribute id="LATITUDE_DEST">
+        <descriptions defaultDescription="LATITUDE"/>
+      </viewAttribute>
+      <viewAttribute id="LONGITUDE_DEST">
+        <descriptions defaultDescription="LONGITUDE"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="ID" source="ID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="STARTINGAIRPORT_IATA3" source="STARTINGAIRPORT_IATA3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LATITUDE_START" source="LATITUDE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LONGITUDE_START" source="LONGITUDE"/>
+    </input>
+    <input node="Join_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="DESTINATIONAIRPORT_IATA3" source="DESTINATIONAIRPORT_IATA3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LATITUDE_DEST" source="LATITUDE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LONGITUDE_DEST" source="LONGITUDE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ID" source="ID"/>
+    </input>
+    <joinAttribute name="ID"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_3">
+  <attributes>
+    <attribute id="ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ID"/>
+      <keyMapping columnObjectName="Join_3" columnName="ID"/>
+    </attribute>
+    <attribute id="STARTINGAIRPORT_IATA3" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="STARTINGAIRPORT_IATA3"/>
+      <keyMapping columnObjectName="Join_3" columnName="STARTINGAIRPORT_IATA3"/>
+    </attribute>
+    <attribute id="DESTINATIONAIRPORT_IATA3" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DESTINATIONAIRPORT_IATA3"/>
+      <keyMapping columnObjectName="Join_3" columnName="DESTINATIONAIRPORT_IATA3"/>
+    </attribute>
+    <attribute id="LATITUDE_START" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LATITUDE"/>
+      <keyMapping columnObjectName="Join_3" columnName="LATITUDE_START"/>
+    </attribute>
+    <attribute id="LONGITUDE_START" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LONGITUDE"/>
+      <keyMapping columnObjectName="Join_3" columnName="LONGITUDE_START"/>
+    </attribute>
+    <attribute id="LATITUDE_DEST" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LATITUDE"/>
+      <keyMapping columnObjectName="Join_3" columnName="LATITUDE_DEST"/>
+    </attribute>
+    <attribute id="LONGITUDE_DEST" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LONGITUDE"/>
+      <keyMapping columnObjectName="Join_3" columnName="LONGITUDE_DEST"/>
+    </attribute>
+  </attributes>
   <calculatedAttributes/>
   <baseMeasures/>
   <calculatedMeasures/>
@@ -16,6 +262,59 @@
   <shapes>
     <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
       <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="-338" y="409"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Projection_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="-134" y="409"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="-214" y="264"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Projection_1" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="Projection_2" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Projection_3" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="136" y="409"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Projection_4" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="328" y="409"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="206" y="273"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Projection_3" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="Projection_4" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_3" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="26" y="206"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_1" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="Join_2" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
     </shape>
   </shapes>
 </layout>
