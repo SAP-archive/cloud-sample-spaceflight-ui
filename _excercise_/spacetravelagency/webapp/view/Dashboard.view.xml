@@ -7,16 +7,11 @@
 					<vbm:AnalyticMap id="vbi" width="100%" xmlns:l="sap.ui.layout" height="100%" regionClick="onRegionClick"
 						regionContextMenu="onRegionContextMenu">
 						<vbm:vos>
-							<vbm:Routes items="{busiestRoutes>/Routes}">
-								<vbm:Route position="{busiestRoutes>position}" color="rgb(117,148,34)" colorBorder="rgb(255,255,255)" linewidth="3" routetype="Geodesic"
+							<vbm:Routes items="{xsODataService>/AllAirportRoutes}">
+								<vbm:Route position="{parts: [{path: 'xsODataService>LATITUDE_START'}, {path: 'xsODataService>LONGITUDE_START'},{path: 'xsODataService>LATITUDE_DEST'}, {path: 'xsODataService>LONGITUDE_DEST'}], formatter: '.formatter.formatRoutes'}" color="rgb(117,148,34)" colorBorder="rgb(255,255,255)" linewidth="3" routetype="Geodesic"
 									click="onClickRoute" contextMenu="onContextMenuRoute"/>
 							</vbm:Routes>
 						</vbm:vos>
-						<vbm:legend>
-							<vbm:Legend id="legend" caption="Legend" items="{/Legend}">
-								<vbm:LegendItem text="{text}" color="{color}"/>
-							</vbm:Legend>
-						</vbm:legend>
 					</vbm:AnalyticMap>
 				</content>
 			</Page>

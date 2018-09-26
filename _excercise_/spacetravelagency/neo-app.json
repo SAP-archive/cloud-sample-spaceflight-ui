@@ -30,7 +30,14 @@
 			"name": "462"
 		},
 		"description": "462"
-	}, {
+	},{
+      "path": "/462_XSODATA",
+      "target": {
+        "type": "destination",
+        "name": "462_XSODATA"
+      },
+      "description": "462 XSODATA For Dashboard"
+    }, {
 		"path": "/test-resources",
 		"target": {
 			"type": "service",

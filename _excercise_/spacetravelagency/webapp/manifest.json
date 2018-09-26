@@ -17,6 +17,14 @@
 					"odataVersion": "2.0",
 					"localUri": "localService/metadata.xml"
 				}
+			},
+			"xsODataService": {
+				"uri": "/462_XSODATA/xsodata/allRoutes.xsodata/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
 			}
 		},
 		"sourceTemplate": {
@@ -68,6 +76,10 @@
 			},
 			"": {
 				"dataSource": "mainService",
+				"preload": true
+			},
+			"xsODataService": {
+				"dataSource": "xsODataService",
 				"preload": true
 			}
 		},

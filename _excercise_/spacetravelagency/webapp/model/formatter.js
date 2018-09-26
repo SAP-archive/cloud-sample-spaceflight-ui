@@ -24,7 +24,11 @@ sap.ui.define([], function () {
 			return sap.ui.core.format.DateFormat.getDateTimeInstance({
 				pattern: "dd-MM-yyyy"
 			}).format(sValue);
-		}
+		},
+		
+		formatRoutes: function(latStart, longStart, latEnd, longEnd){
+			return 	latStart +";"+ longStart + ";" + "0"+"; "+latEnd +";"+ longEnd + ";" + "0"; //"2.3533219;48.856614;0; -14.0034731;40.7143528;0"
+		},
 	};
 
 });
