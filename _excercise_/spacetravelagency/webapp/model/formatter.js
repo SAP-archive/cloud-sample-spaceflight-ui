@@ -26,9 +26,9 @@ sap.ui.define([], function () {
 			}).format(sValue);
 		},
 		
-		formatRoutes: function(latStart, longStart, latEnd, longEnd){
-			return 	latStart +";"+ longStart + ";" + "0"+"; "+latEnd +";"+ longEnd + ";" + "0"; //"2.3533219;48.856614;0; -14.0034731;40.7143528;0"
-		},
+		formatRoutes: function(longStart, latStart, longEnd, latEnd, ){
+			return 	longStart +";"+ latStart + ";" + "0"+"; "+longEnd +";"+ latEnd + ";" + "0"; //"2.3533219;48.856614;0; -14.0034731;40.7143528;0"
+		}
 	};
 
 });
