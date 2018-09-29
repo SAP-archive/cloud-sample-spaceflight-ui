@@ -75,7 +75,11 @@ You need SAP Cloud Platform Neo account to access "SAP Web IDE Full-Stack" and t
 
 1.	From SAP Cloud Platform Cockpit, click on **Destination**. The destination **462** has configured to access the Java service.
 
-	![](images/6.png) 
+	![](images/6.png)  
+
+1.	The destination **462_XSODATA** has configured to access the Node.js service.
+
+	![](images/6-1.png)
 	
 1.	From SAP Cloud Platform Cockpit, click on **Services**. Search for "SAP Web IDE Full-Stack" service.
 

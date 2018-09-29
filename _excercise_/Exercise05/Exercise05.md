@@ -126,7 +126,7 @@ In this exercise, we will consume the Node.js service to create the dashboard.
 
 	![](images/7.png)
 
-1. On the "Descriptor Editor", click on *Data Sources* tab.  Click on **+** button in the *OData Service* section.
+1. On the "Descriptor Editor", click on *Data Sources* tab.  Click on **+** button in the *OData Services* section.
 
 	![](images/8.png)
 
@@ -272,7 +272,7 @@ In this exercise, we will consume the Node.js service to create the dashboard.
 	
 1. Congratualtions!  You have completed all exercises for this hands-on session.
 
-	![](images/27.jpg)
+	![](images/27.png) 
 
 
 ## Summary
