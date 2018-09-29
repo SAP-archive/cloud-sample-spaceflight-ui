@@ -97,4 +97,4 @@ You need SAP Cloud Platform Neo account to access "SAP Web IDE Full-Stack" and t
 ## Summary
 This concludes the exercise. By now you should know the excercise landscape for this hands-on exercise, how to access SAP Cloud Platform Neo account, check the destination setup, and launch SAP Web IDE Full-Stack.
 
-Proceed with [next exercise](/././Exercise02/Exercise02.md).
+Proceed with [next exercise](/././_excercise_/Exercise02/Exercise02.md).
