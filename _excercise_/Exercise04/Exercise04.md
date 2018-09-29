@@ -860,4 +860,4 @@ Let's enable application to be able to add bookings information.
 ## Summary
 This concludes the exercise. You should have learned how to to enhance Space travel bookings with customers and bookings information by consuming the Java Service. 
 
-Proceed with [next exercise](/./Exercise05/Exercise05.md).
+Proceed with [next exercise](/././_excercise_/Exercise05/Exercise05.md).

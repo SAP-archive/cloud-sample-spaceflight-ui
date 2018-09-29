@@ -88,4 +88,4 @@ Below is a small preview of the BookingService from the Java layer:
 ### Summary
 This concludes the exercise. You should have learned how to access various oData services available and know the kind of UI that needs to be developed.
 
-Proceed with [next exercise](/./Exercise03/Exercise03.md).
+Proceed with [next exercise](/././_excercise_/Exercise03/Exercise03.md).
