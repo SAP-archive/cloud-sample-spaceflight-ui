@@ -523,4 +523,4 @@ Let's fix the itinerary information.
 ## Summary
 This concludes the exercise. Now you how to create a SAP Fiori Master-Detail application. Add the Customer, booking, and itinerary views by consuming the Java Service. 
 
-Proceed with [next exercise](/././_excercise_/Exercise04/Exercise04.md).
+Proceed with [next exercise](/./Exercise04/Exercise04.md).

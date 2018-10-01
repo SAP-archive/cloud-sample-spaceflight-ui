@@ -278,4 +278,4 @@ In this exercise, we will consume the Node.js service to create the dashboard.
 ## Summary
 This concludes the exercise. You should have learned how to add datasource from Node.js and create a dashboard for Booking. You have completed all exercises for **SAP TechEd 2018 - CNA462** hands-on session.
 
-Back to [exercise index page](/././_excercise_/).
+Back to [exercise index page](/./).
