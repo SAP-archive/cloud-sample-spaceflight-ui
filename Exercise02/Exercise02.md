@@ -71,7 +71,7 @@ Below is a small preview of the BookingService from the Java layer:
 	
 1. Open your browser and check this [link](https://teched2018-cna462-dev-srv.cfapps.eu10.hana.ondemand.com/odata/v2/BookingService/$metadata) to view the booking service from Java. You can also look at all the bookings by going [here](https://teched2018-cna462-dev-srv.cfapps.eu10.hana.ondemand.com/odata/v2/BookingService/Bookings)
 
-1. Open your browser and check this [link](https://teched2018-cna462-dev-nodejs.cfapps.eu10.hana.ondemand.com/xsodata/allRoutes.xsodata/AllAirportRoutes) to view the XS OData service from node
+1. Open your browser and check this [link](https://teched2018-cna462-dev-nodejs.cfapps.eu10.hana.ondemand.com/xsodata/allRoutes.xsodata/AllAirportRoutes?$top=20) to view the XS OData service from node
 
 
 ### <a name="##web-ide-template-for-building-ui"></a> Overview of the UI
