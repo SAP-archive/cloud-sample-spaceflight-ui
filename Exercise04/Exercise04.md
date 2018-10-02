@@ -39,7 +39,7 @@ Let's enable application to be able to add customers information. Before we add 
 
 	![](images/17.png)
 
-1. Add the following codes for the buttons on the footer area.
+1. Add the following codes for the buttons on the footer area after the end tag  **\</semantic:content>** at the bottom of the file.
 
 	```
 	<semantic:footerCustomActions>
