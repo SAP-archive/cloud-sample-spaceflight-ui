@@ -670,8 +670,8 @@ Let's enable application to be able to add bookings information.
 												<f:fields>
 													<Select width="100%" id="mealTypeSelect" selectedKey="Vegetarian">
 														<items>
-															<core:Item text="Asian Vegetarian" key="AsianVeg"/>
-															<core:Item text="Asian Non Vegetarian" key="AsianNonVeg"/>
+															<core:Item text="Asian Veg" key="AsianVeg"/>
+															<core:Item text="Asian Non Veg" key="AsianNonVeg"/>
 															<core:Item text="Non Vegetarian" key="NonVegetarian"/>
 															<core:Item text="Vegetarian" key="Vegetarian"/>
 															<core:Item text="Vegan" key="Vegan"/>
